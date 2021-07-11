@@ -277,6 +277,19 @@
         android:title="@string/traffic_title"
         android:summary="@string/traffic_title_summary" />
 
+   <PreferenceCategory
+        android:key="volume_panel_stuff"
+        android:title="@string/volume_panel">
+
+   <com.android.settings.fork.preference.SystemSettingListPreference
+            android:key="systemui_plugin_volume"
+            android:title="@string/volume_panel"
+            android:entries="@array/volume_panel_entries"
+            android:entryValues="@array/volume_panel_values"
+            android:defaultValue="@string/volume_panel_stock_val" />
+
+    </PreferenceCategory>
+
     <!-- Gvisual mod -->
     <PreferenceCategory 
         android:key="gvisual_category"
